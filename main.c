@@ -3,12 +3,11 @@
 int main(void) {
     int num;
 
-    printf("整数を入力してください: ");
+    // 自動採点システム用に入力案内メッセージを削る
     if (scanf("%d", &num) != 1) {
         return 1;
     }
 
-    // 10以上15未満 かつ 12以外のときOK
     if (num >= 10 && num < 15 && num != 12) {
         printf("OK\n");
     } else {
